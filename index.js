@@ -9,11 +9,7 @@ app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 3000;
 
-app.use('/', (req, res, next) => {
-    console.log(req.headers);
-    const body = req.body;
-    res.send(body);
-});
+app.use(express.static('dist'))
 
 const httpServer = app.listen(PORT, () => {
     console.log(`Up and running on port ${PORT}`);
