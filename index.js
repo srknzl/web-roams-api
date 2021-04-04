@@ -27,7 +27,7 @@ const wsServer = new WebSocketServer({
 
 function originIsAllowed(origin) {
     // put logic here to detect whether the specified origin is allowed.
-    return process.env.NODE_ENV === "production" ? origin === "web-roams.herokuapp.com" : "localhost:8080";
+    return process.env.NODE_ENV === "production" ? origin === "https://web-roams.herokuapp.com" : "http://localhost:8080";
 }
 
 wsServer.on('request', function (request) {
