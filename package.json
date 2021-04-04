@@ -1,0 +1,25 @@
+{
+  "name": "web-roams-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srknzl/web-roams-api.git"
+  },
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/srknzl/web-roams-api/issues"
+  },
+  "homepage": "https://github.com/srknzl/web-roams-api#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "websocket": "^1.0.33"
+  }
+}
